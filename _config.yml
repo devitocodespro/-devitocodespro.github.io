@@ -30,7 +30,9 @@ twitter_username: devitocodes
 
 # Build settings
 markdown: kramdown
+
 theme: jekflix
+
 #plugins:
 #  - jekyll-feed
 
