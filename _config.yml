@@ -19,11 +19,15 @@ menu:
     url: /contact
 
 email: gerard@devitocodes.com
-description: >- # this means to ignore newlines until "baseurl:"
-Devito is a Python package to implement optimized stencil computation (e.g., finite differences, image processing, machine learning) from high-level symbolic problem definitions. Devito builds on SymPy and employs automated code generation and just-in-time compilation to execute optimized computational kernels on several computer platforms, including CPUs, GPUs, and clusters thereof.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.devitocodes.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+description: "Devito is a Python package to implement optimized stencil computation (e.g., finite differences, image processing, machine learning) from high-level symbolic problem definitions. Devito builds on SymPy and employs automated code generation and just-in-time compilation to execute optimized computational kernels on several computer platforms, including CPUs, GPUs, and clusters thereof."
+
+baseurl: ""
+
+url: "https://www.devitocodes.com"
+
 twitter_username: devitocodes
+
 #github_username:  jekyll
 
 # Build settings
