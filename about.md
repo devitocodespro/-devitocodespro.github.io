@@ -1,6 +1,10 @@
 ---
 layout: page
-title: About Devito Codes Ltd
+menu: false
+date: '2020-01-01 00:00:00'
+title: About
+description: Devito Codes Ltd.
+permalink: /about/
 ---
 
 <p> Devito Codes Ltd is the commercial arm of the open-source platform <a
