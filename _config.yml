@@ -65,9 +65,9 @@ show_get_theme_btn: false
 theme: jekflix
 
 # Posts Settings
-#show_time_bar: true
-#show_modal_on_exit: false
-#show_modal_on_finish_post: true
+show_time_bar: true
+show_modal_on_exit: false
+show_modal_on_finish_post: true
 #two_columns_layout: true
 
 #plugins:
