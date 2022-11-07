@@ -6,7 +6,33 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Devito Codes Ltd
+
+name: Devito Codes
+
+title: Devito Codes
+
+description: "Devito is a Python package to implement optimized stencil computation (e.g., finite differences, image processing, machine learning) from high-level symbolic problem definitions. Devito builds on SymPy and employs automated code generation and just-in-time compilation to execute optimized computational kernels on several computer platforms, including CPUs, GPUs, and clusters thereof."
+
+tags:
+  - Devito
+  - DSL
+  - Domain specific language
+  - HPC
+  - finite-difference
+  - CUDA
+  - HIP
+  - OpenMP
+  - MPI
+
+email: gerard@devitocodes.com
+
+formspree_form_id: gerard@devitocodes.com
+
+show_hero: true
+
+paginate: 24
+
+twitter_username: devitocodes
 
 menu:
   - title: Home
@@ -18,15 +44,10 @@ menu:
   - title: Contact
     url: /contact
 
-email: gerard@devitocodes.com
-
-description: "Devito is a Python package to implement optimized stencil computation (e.g., finite differences, image processing, machine learning) from high-level symbolic problem definitions. Devito builds on SymPy and employs automated code generation and just-in-time compilation to execute optimized computational kernels on several computer platforms, including CPUs, GPUs, and clusters thereof."
-
 baseurl: ""
 
 url: "https://www.devitocodes.com"
 
-twitter_username: devitocodes
 
 language: "en"
 
@@ -63,3 +84,5 @@ two_columns_layout: true
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+google_analytics: "G-39F3JRV5HY"

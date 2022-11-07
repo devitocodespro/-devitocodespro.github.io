@@ -1,16 +1,30 @@
 ---
+date: 2021-09-06T23:48:05.000Z
 layout: post
 title: TheMatrix v0.2 - The Devito benchmark matrix
-description: "Benchmarking Devito solvers across computer architectures,
-execution models, compilers and anything else one can think of. Thought for
-developers and enterprises."
-tags: [Python, high-performance computing]
+subtitle: 'Benchmark everything, trust no one'
+description: >-
+  Benchmarking Devito solvers across computer architectures, execution models,
+  compilers and anything else one can think of. Thought for developers and
+  enterprises.
+image: >-
+  /images/thematrix_screenshot.png
+optimized_image: >-
+  /images/thematrix_screenshot.png
+category: blog
+tags:
+  - benchmarking
+  - HPC
+  - Cloud
+  - AMD
+  - ARM
+  - Intel
+  - NVidia
 author: Dr. Fabio Luporini (CTO)
+paginate: true
 ---
 
-<img src="/images/thematrix_screenshot.png">
-
-We announce **TheMatrix**, an automated, cross-platform benchmarking suite for
+We developed **TheMatrix** as an automated, cross-platform benchmarking suite for
 [Devito](https://www.devitoproject.org). By the push of a button, utilizing
 GitHub Actions in tandem with Airspeed Velocity (ASV), Devito's benchmarking
 tools, and computing platforms, a spectrum of benchmarks and regression tests
