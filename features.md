@@ -7,6 +7,17 @@ description: DevitoPRO features
 permalink: /features/
 ---
 
+## Feature overview
+
+* CPUs (Intel, AMD, ARM)				
+* GPUs (NVidia, AMD)				
+* Multi-node architectures via MPI				
+* Lazy data streaming from/to GPUs
+* Lossy-compression of data				
+* Optimized MPI communications on GPUs				
+* Adaptive (expanding/contracting) box				
+* Comprehensive performance autotuning
+
 ## Features comparison
 
 <table>
@@ -95,14 +106,29 @@ permalink: /features/
         <td style="padding-left:10px" colspan="5"><i>Compute</i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> CPUs (Intel, AMD, ARM)</td>
+      <td align="right" style="padding-left:10px">CPUs (Intel, AMD, ARM)</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> GPUs (NVidia, AMD)</td>
+      <td align="right" style="padding-left:10px">AMD GPUs - OpenMP</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr align="center" bgcolor="#e6fff6">
+      <td align="right" style="padding-left:10px"> AMD GPUs - HIP</td>
+      <td></td>
+      <td><i class="fas fa-check text-xl"></i>(beta)</td>
+    </tr>
+    <tr align="center" bgcolor="#e6fff6">
+      <td align="right" style="padding-left:10px"> NVidia GPUs - OpenMP, OpenACC</td>
+      <td><i class="fas fa-check text-xl"></i></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr> 
+       <tr align="center" bgcolor="#e6fff6">
+      <td align="right" style="padding-left:10px"> NVidia GPUs - CUDA</td>
+      <td></td>
+      <td><i class="fas fa-check text-xl"></i>(beta)</td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
       <td align="right" style="padding-left:10px"> Multi-node architectures via MPI</td>
@@ -110,7 +136,7 @@ permalink: /features/
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> Data streaming from/to GPUs</td>
+      <td align="right" style="padding-left:10px"> Lazy data streaming from/to GPUs</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
