@@ -28,7 +28,12 @@ permalink: /features/
       <td class="top aligned"><h3 class="ui header"><b>DevitoPRO</b></h3></td>
     </tr>
     <tr align="left" bgcolor="#75C3A5">
-        <td style="padding-left:10px" colspan="5"><i>Hardware support</i></td>
+        <td style="padding-left:10px" colspan="5"><i>Platform support</i></td>
+    </tr>
+    <tr align="center" bgcolor="#e6fff6">
+      <td align="right" style="padding-left:10px"> Cloud-readiness</td>
+      <td><i class="fas fa-check text-xl"></i></td>
+      <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
       <td align="right" style="padding-left:10px">CPUs (Intel, AMD, ARM)</td>
@@ -39,40 +44,35 @@ permalink: /features/
       <td align="right" style="padding-left:10px">AMD GPUs - OpenMP</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
+    </tr> 
+    <tr align="center" bgcolor="#e6fff6">
+      <td align="right" style="padding-left:10px"> NVidia GPUs - OpenMP, OpenACC</td>
+      <td><i class="fas fa-check text-xl"></i></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr> 
     <tr align="center" bgcolor="#e6fff6">
       <td align="right" style="padding-left:10px"> AMD GPUs - HIP</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i>(beta)</td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> NVidia GPUs - OpenMP, OpenACC</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr> 
-       <tr align="center" bgcolor="#e6fff6">
       <td align="right" style="padding-left:10px"> NVidia GPUs - CUDA</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i>(beta)</td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> Multi-node architectures via MPI</td>
+      <td align="right" style="padding-left:10px"> Multi-node parallel via MPI</td>
       <td><i class="fas fa-check text-xl"></i></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>    
+    <tr align="center" bgcolor="#e6fff6">
+      <td align="right" style="padding-left:10px"> Optimized MPI communications on GPUs</td>
+      <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
       <td align="right" style="padding-left:10px"> Lazy data streaming from/to GPUs</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> MPI communications on GPUs</td>
-      <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> Cloud-readiness</td>
-      <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="left" bgcolor="#75C3A5">
