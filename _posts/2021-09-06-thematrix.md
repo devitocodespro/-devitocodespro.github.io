@@ -11,7 +11,7 @@ image: >-
   /images/thematrix_screenshot.png
 optimized_image: >-
   /images/thematrix_screenshot.png
-category: blog
+category: Benchmarking
 tags:
   - benchmarking
   - HPC
