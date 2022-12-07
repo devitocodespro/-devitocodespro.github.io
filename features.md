@@ -7,7 +7,7 @@ description: DevitoPRO features
 permalink: /features/
 ---
 
-## Feature overview
+## DevitoPRO feature overview
 
 * CPUs (Intel, AMD, ARM)				
 * GPUs (NVidia, AMD)				
