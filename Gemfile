@@ -24,3 +24,5 @@ gem "webrick", "~> 1.7"
 gem "faraday-retry", "~> 2.0"
 
 gem "jekyll", "~> 3.9"
+
+gem "jekyll-mermaid", "~> 1.0"

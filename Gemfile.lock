@@ -134,6 +134,7 @@ GEM
     jekyll-mentions (1.6.0)
       html-pipeline (~> 2.3)
       jekyll (>= 3.7, < 5.0)
+    jekyll-mermaid (1.0.0)
     jekyll-optional-front-matter (0.3.2)
       jekyll (>= 3.0, < 5.0)
     jekyll-paginate (1.1.0)
@@ -272,6 +273,7 @@ DEPENDENCIES
   jekflix
   jekyll (~> 3.9)
   jekyll-feed (~> 0.6)
+  jekyll-mermaid (~> 1.0)
   kramdown-parser-gfm
   webrick (~> 1.7)
 
