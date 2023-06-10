@@ -23,13 +23,12 @@ Devito Codes Ltd is the commercial arm of the open-source platform
 ### Gerard Gorman, CEO and co-founder
 
 <img src="/assets/img/profile_Gerard.jpg" alt="Gerard Gorman" align="left"
-style="margin:0px 50px 50px 50px"/> Gerard has a PhD in computational physics
-from Imperial College London where he is currently a
-[Reader](https://en.wikipedia.org/wiki/Reader_(academic_rank)) in Computational
-Science and Engineering and Director of the Applied Computational Science and
-Engineering MSc in the Department of Earth Science and Engineering, Imperial
-College London. He has more than 20 years experience in high performance
-computing, numerical modeling, inverse problems, code generation and compilers.
+style="margin:0px 50px 50px 50px"/> Gerard has more than 20 years experience in
+high performance computing, research software development, numerical modeling,
+inverse problems, code generation and compilers. Gerard is also a Professor of
+Computational Science and Engineering and Director of the Applied Computational
+Science and Engineering MSc programme in the Department of Earth Science and
+Engineering, Imperial College London. 
 
 ### Fabio Luporini, CTO and co-founder
 
