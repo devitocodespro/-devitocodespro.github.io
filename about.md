@@ -18,9 +18,7 @@ Devito Codes Ltd is the commercial arm of the open-source platform
 * Consultancy
 * Training
 
-## Board of directors
-
-### Gerard Gorman, CEO and co-founder
+## Gerard Gorman, CEO and co-founder
 
 <img src="/assets/img/profile_Gerard.jpg" alt="Gerard Gorman" align="left"
 style="margin:0px 50px 50px 50px"/> Gerard has more than 20 years experience in
@@ -30,7 +28,7 @@ Computational Science and Engineering and Director of the Applied Computational
 Science and Engineering MSc programme in the Department of Earth Science and
 Engineering, Imperial College London. 
 
-### Fabio Luporini, CTO and co-founder
+## Fabio Luporini, CTO and co-founder
 
 <img src="/assets/img/profile_Fabio.jpg" alt="Fabio Luporini" align="left"
 style="margin:0px 50px 50px 50px"/>Fabio has a PhD in
@@ -42,7 +40,7 @@ software architect of Devito and has more than 8 years experience working on
 the boundaries between computer science, high-performance computing and
 mathematical modeling.
 
-### Paul Holzhauer, Director of Business Development and Strategy and co-founder
+## Paul Holzhauer, Director of Business Development and Strategy and co-founder
 
 <img src="/assets/img/profile_Paul.jpg" alt="Paul Holzhauer" align="left"
 style="margin:0px 50px 50px 50px"/> Paul Holzhauer is responsible for developing
@@ -59,7 +57,7 @@ his career as an ALC programmer for a utility company, and thereby quickly
 understood the potential value of computing. He holds a B.S. in Quantitative
 Mathematics from the University of Houston.
 
-### Mathias Louboutin, Senior Solution Architect
+## Mathias Louboutin, Senior Solution Architect
 
 <img src="/assets/img/profile_Mathias.jpg" alt="Mathias Louboutin" align="left"
 style="margin:0px 50px 50px 50px"/> Mathias has a Ph.D. from the Georgia
