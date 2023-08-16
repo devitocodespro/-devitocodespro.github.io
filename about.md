@@ -58,3 +58,23 @@ years at Sun Microsystems, all spent developing the oil and gas market. He began
 his career as an ALC programmer for a utility company, and thereby quickly
 understood the potential value of computing. He holds a B.S. in Quantitative
 Mathematics from the University of Houston.
+
+### Mathias Louboutin, Senior Solution Architect
+
+<img src="/assets/img/profile_Mathias.jpg" alt="Mathias Louboutin" align="left"
+style="margin:0px 50px 50px 50px"/> Mathias has a Ph.D. from the Georgia
+Institute of Technology. Previously, he worked as a research scientist in the
+Seismic Laboratory for Imaging and Modelling (SLIM). During that time, he was
+the lead developer of the open-source software JUDI (Julia Devito Inversion
+framework). He has more than a decade of experience working on scalable and
+portable open-source software for the exploration geophysics and inverse
+problems. Mathias's research includes large-scale PDE-constrained optimization,
+finite-difference solver, non-linear and non-convex optimization with recent
+extensions to medical imaging, and cloud-native high-performance computing
+(AWS, GCP, and Azure).
+
+Mathias has been a critical figure in developing the open-source Devito
+framework since the beginning. As Senior Solution Architect, he continues to
+develop Devito and DevitoPRO to create state-of-the-art solutions in exascale
+HPC, machine learning, DSLs, PDE-constrained optimization (e.g., subsurface
+imaging), and cloud computing. 
