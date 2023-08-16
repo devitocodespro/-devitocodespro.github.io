@@ -59,7 +59,7 @@ Mathematics from the University of Houston.
 
 ## Mathias Louboutin, Senior Solution Architect
 
-<img src="/assets/img/profile_Mathias.jpg" alt="Mathias Louboutin" align="left"
+<img src="/assets/img/profile_Mathias.png" alt="Mathias Louboutin" align="left"
 style="margin:0px 50px 50px 50px"/> Mathias has a Ph.D. from the Georgia
 Institute of Technology. Previously, he worked as a research scientist in the
 Seismic Laboratory for Imaging and Modelling (SLIM). During that time, he was
