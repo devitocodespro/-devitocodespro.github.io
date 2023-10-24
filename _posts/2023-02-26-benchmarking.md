@@ -2,11 +2,13 @@
 date: 2022-11-09T00:00:00.000Z
 layout: post
 title: Cross-platform seismic imaging benchmarking
-subtitle: 'Collaborative optimization and benchmarking of seismic imaging workloads'
+subtitle: 'Optimization and benchmarking of seismic imaging workloads'
 description: >-
   A framework for cross-platform benchmarking of seismic imaging
-  workloads is described. The vision is that it evolves into a collaborative
-  platform for the community to create better software and better decisions.
+  workloads is described. The vision for this platform is that
+  it will be used to support collaboration between Devito Codes,
+  hardware vendors and Cloud providers to continuously optimize 
+  the performance of seismic imaging workloads.
 image: >-
   /images/robot_devito_pro_banner.png
 optimized_image: >-
@@ -25,36 +27,56 @@ paginate: true
 mermaid: true
 ---
 
-### TLDR
+We have launched a groundbreaking framework to benchmark seismic imaging workloads across different platforms. This initiative brings together key stakeholders from Devito, hardware vendors, cloud providers, and the broader industry, setting a stage for standardization, reproducibility, and elevated performance in seismic imaging workloads.
 
-We have created a [GitHub](https://github.com/)-based extensible framework for
-benchmarking seismic imaging kernels. The platform includes a development
-cluster of servers with various computer architectures, configured as [GitHub
-self-hosted
+Key Highlights:
+
+1. **Standardization and Reproducibility**:
+   - Advocates for standardized comparisons and robust performance data, aiding organizations in insightful hardware or cloud system acquisitions.
+
+2. **Efficient Resource Utilization**:
+   - Promotes code/data reuse and minimizes redundant efforts, leading to efficient resource and human capital utilization.
+
+3. **Extendable and Automated Workflow**:
+   - The flexible architecture allows for extensibility and employs automation for a streamlined benchmarking process, catering to evolving needs.
+
+4. **Community Engagement**:
+   - The initiative welcomes community engagement and dialogue, laying the groundwork for future collaborations, workshops, and benchmarking expansions.
+
+5. **Transparency and Validation**:
+   - Even in its alpha phase, the emphasis on transparency and validation of benchmark data ensures responsible use of preliminary data. However, because of the commercial sensitivity of the data, the benchmarking data is only available under NDA.
+
+This framework signifies a substantial stride towards nurturing a collaborative
+ecosystem aimed at advancing standardization and optimization of seismic imaging
+workloads across diverse computing architectures. The collaborative ethos
+facilitated by this platform is geared towards driving notable advancements in
+seismic imaging performance, contributing to the overarching goal of efficient
+resource utilization and heightened computational capabilities.
+
+### Overview 
+
+The framework is build on [GitHub](https://github.com/)-based having being
+heavily influenced by our existing CI/CD framework. The platform includes a
+development cluster of servers with various computer architectures, configured
+as [GitHub self-hosted
 runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners),
 and utilizes [GitHub Actions](https://docs.github.com/en/actions) to automate
-workflows. The platform allows for standardized and reproducible comparisons of
-different methods, hardware, and skills. It also enables collaboration and
-code/data reuse, ultimately leading to better performance of the software and
-efficient use of human capital. The platform is also easily extendable by
-configuring self-hosted runners, adding different benchmarks to the GitHub
-Actions workflow, and more servers (either on-prem or Cloud-based).
+workflows.
 
-The table with a summary of the current benchmark highlights is available
-[here](https://www.devitocodes.com/benchmarks/private-cA1DbM/index.html).
-**Disclaimer:** There results are *work-in-progress* and are included only to
-stimulate community collaboration on benchmarking. There is ongoing effort to
-optimize the code generated for different target architectures and so these
-performance figures will evolve over the next few months. Do not make commercial
-decisions based on this data.
+One of the advantages of this approach is that it naturally supports automation,
+standardized and reproducible comparisons of different methods, hardware, and
+skills. It also enables collaboration and code/data reuse, ultimately leading to
+better performance of the software and efficient use of human capital. The
+platform is also easily extendable by configuring self-hosted runners, adding
+different benchmarks to the GitHub Actions workflow, and more servers (either
+on-prem or Cloud-based).
 
-### The vision: creating a platform for collaboration.
+### Benchmarking as a platform
 
 The key idea behind the seismic imaging benchmarking platform is to bring
 together stakeholders in the industry, such as energy companies, service
 companies, processor manufacturers, and academic researchers, to standardize
-benchmarking of seismic imaging kernels and provide reference implementations
-for a range of architectures.
+benchmarking of seismic imaging kernels.
 
 The objective is to enable accurate and reproducible benchmark experiments,
 facilitate collaboration and code/data reuse, reduce the duplication of effort
@@ -120,7 +142,6 @@ their development process. In our case, GitHub Actions are used to
 * Execute one or more benchmarks.
 * Upload benchmark data to a results repository.
 * Post-process benchmark data.
-* Publish results on a website.
 
 #### Workflow of benchmark automation with GitHub Actions
 
@@ -149,7 +170,6 @@ their development process. In our case, GitHub Actions are used to
     end;
 </div>
 
-
 GitHub Actions can run on either GitHub-hosted runners or self-hosted runners.
 Self-hosted runners are used to execute a workflow on machines the users have
 direct access to, rather than on GitHub-managed infrastructure. Self-hosted
@@ -163,7 +183,6 @@ development environments and need more control over their workflow execution.
 For the work described here, we have configured the following self-hosted runners:
 
 * NVIDIA A100-PCIE-40GB (on-prem)
-* NVIDIA A100-SXM4-40GB (Oracle Cloud Infrastructure, BM.GPU4.8)
 * NVIDIA Tesla PG503-216 (on-prem)
 * AMD Instinct™ MI210 (on-prem)
 * Intel(R) Xeon(R) Gold 5218R CPU (on-prem)
@@ -190,39 +209,6 @@ machines and reproduce performance results. In our experience, virtual
 containers are the only realistic way of maintaining and extending a software
 and hardware infrastructure like the one we envision in this project. 
 
-### Software Description
-
-Here, we delve into the inner workings of the software framework. The main
-software repo is at https://github.com/devitocodespro/benchmarks. All the
-benchmark data is pushed to a designated branch of the repo, named `data`, to
-enable data exploration. Two files are created for each benchmark:
-
-* `data/<arch>/<benchmark-name>.log` contains the full combined stdout and stderr of GitHub action as if it was executed from the command line.
-* `data/<arch>/<benchmark-name>.json` contains a summary of the autotuning experiments.
-
-The Jupyter notebook, sandbox.ipynb, provides examples of how the data can be explored.
-
-HTML pages are automatically generated, containing a performance 'leaderboard' and other summary data.
-
-The GitHub Actions workflow file is at https://github.com/devitocodespro/benchmarks/blob/main/.github/workflows/benchmark.yml. 
-
-The Dockerfiles to create the virtual containers are those used in Devito and
-DevitoPRO. These Dockerfiles are used by Devito’ and DevitoPRO’s CI, which means
-they are heavily tested.
-
-Currently, all benchmarking is carried out using the DevitoPRO benchmark and
-autotuning tool, `/devitopro/devitotuner/benchmark.py`. Rather than running a
-single instance of the benchmark, the autotuner sweeps through code optimization
-options and other tunable parameters (e.g., cache-block size) to discover the
-best achievable performance.
-
-The performance measure in this context is giga-grid-points-per-second, GPt/s
-(sometimes called giga-cells-per-second). The advantages of this performance
-measure are:
-
-* Directly relates to the work throughout, and therefore the dollar cost of data processing.
-* Unlike FLOPs, it is a non-gamble measure of performance.
-
 Currently, three benchmarks are configured:
 
 #### Isotropic acoustic
@@ -231,7 +217,6 @@ Currently, three benchmarks are configured:
 * Number of time steps: 400
 * Space order: 8
 * Time order: 2
-* Implementation: /devitopro/demos/iso_acoustic
 
 #### Fletcher and Fowler TTI
 * Shortcut: tti_fl
@@ -239,7 +224,6 @@ Currently, three benchmarks are configured:
 * Number of time steps: 400
 * Space order: 8
 * Time order: 2
-* Implementation: /devitopro/demos/tti_fletcher
 
 #### Skew-adjoint TTI
 * Shortcut: tti_sa
@@ -247,19 +231,40 @@ Currently, three benchmarks are configured:
 * Number of time steps: 400
 * Space order of operator: 8
 * Time order: 2
-* Implementation: /devitopro/demos/tti_acoustic_self_adjoint
 
-The numerical correctness of the benchmarks is validated by `/devitopro/devitotuner/benchmark.py`.
+### Results preview
 
-### The output
+We have included a snapshot of results below. FLOPS (Floating Point Operations Per Second) is a well-recognized measure in High-Performance Computing (HPC), but it may not always be the most revealing. Its value can be inflated by employing inefficient numerical methods. In seismic imaging, GPts/s (Giga-Points Per Second) — also termed giga-cells-per-second — is often favored. This metric directly measures work throughput, offering a clearer gauge of performance. In essence, GPts/s helps in accurately estimating the time or cost required to solve a specific problem.
 
-The table with the current benchmark results is available
-[here](https://www.devitocodes.com/benchmarks/private-cA1DbM/index.html). As
-explained earlier, this page is automatically updated each time the benchmark
-suite runs via GitHub Actions. In each case, we are only benchmarking the best
-implementation. Therefore, while we support OpenMP offloading and OpenACC, we
-only benchmark CUDA for Nvidia and HIP for AMD GPUs, as these outperform OpenMP
-offloading and OpenACC implementations.
+**Disclaimer:** *Although we have exerted maximum effort to guarantee precise, equitable, and replicable results, it is crucial to understand that the benchmarking framework is still in the alpha development phase. Consequently, the benchmarks provided here are preliminary and subject to change. The benchmark data should not be considered comprehensive or final, and are not suited for making any financial decisions.*
+
+*No warranty, express or implied, is provided with the data. The information is supplied on an "as is" basis. We expressly disclaim, to the maximum extent permitted by law, any liability for any damages or losses, direct or consequential, resulting from the use of these benchmarks. Please utilize this information responsibly, keeping in mind its tentative nature.*
+
+
+### 3D Isotropic acoustic
+
+| Processor                          | GPts/s |
+|-----------------------------------|-------|
+| NVIDIA A100-80GB                   | 62.7  |
+| NVIDIA A100-PCIE-40GB              | 54.2  |
+| AMD Instinct™ MI250                | 54    |
+| NVIDIA Tesla PG503-216 (V100)      | 31    |
+| AMD Instinct™ MI210                | 29.2  |
+| Intel(R) Xeon(R) Gold 5218R CPU    | 7.97  |
+| AMD EPYC 7413 24-Core Processor    | 1.49  |
+
+### 3D Fletcher Du Fowler TTI
+
+| Processor                          | GPts/s |
+|-----------------------------------|-------|
+| AMD Instinct™ MI250                | 16.1  |
+| NVIDIA A100-80GB                   | 12.4  |
+| NVIDIA A100-PCIE-40GB              | 12.2  |
+| AMD Instinct™ MI210                | 9.83  |
+| NVIDIA Tesla PG503-216 (V100)      | 9.34  |
+| Intel(R) Xeon(R) Gold 5218R CPU    | 1.72  |
+| AMD EPYC 7413 24-Core Processor    | 0.797 |
+
 
 ### Future work
 
@@ -276,38 +281,13 @@ offloading and OpenACC implementations.
 * Add more bare metal nodes to the development cluster.
 * Engage with hardware vendors to get test nodes.
 * Add Cloud-based self-hosted runners:
-  * In the case of OCI, we used a VM instance that needed to be manually brought up and taken down when finished.
   * Ideally, this would be configured as an on-demand runner.
 * Community engagement.
 * Organize benchmarking workshops.
 * Engage with hardware and Cloud vendors to review and optimize benchmarks.
-* Encourage community submissions.
-* Miscellaneous issues list - https://github.com/devitocodespro/benchmarks/issues
-
-### Process for manually run benchmarks
-
-<div class="mermaid">
-  graph TB
-    A(Manual execution of benchmark)
-    B(git-pull benchmarking data repo)
-    A-->B
-    C(Add results)
-    B-->C
-    D(Submit pull-request to trigger peer review)
-    C-->D
-    E1(Approve)
-    D-->E1
-    E2(Revise)
-    D-->E2
-    E2-->A
-    F(Merge)
-    E1-->F
-    G(GitHub Action: publish to gh-pages)
-    F-->G;
-</div>
 
 ### Acknowledgements
 
 Many thanks to Chevron for the funding and feedback to kickstart this
-initiative.  We would also like to thank AMD, AWS, Dell, Oracle, Nvidia and
+initiative.  We would also like to thank AMD, AWS, Dell, Nvidia and
 Supermicro for providing hardware and cloud resources. 
