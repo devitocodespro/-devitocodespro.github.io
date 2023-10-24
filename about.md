@@ -76,3 +76,29 @@ framework since the beginning. As Senior Solution Architect, he continues to
 develop Devito and DevitoPRO to create state-of-the-art solutions in exascale
 HPC, machine learning, DSLs, PDE-constrained optimization (e.g., subsurface
 imaging), and cloud computing. 
+
+## Edward (Ed) Caunt, Research Scientist
+
+<img src="/assets/img/profile_Edward.jpg" alt="Edward Caunt" align="left"
+style="margin:0px 50px 50px 50px"/>Edward "Ed" Caunt is an erudite research
+scientist with a penchant for diving deep into seismic wavefields and their
+representation in numerical models. He recently completed his PhD at Imperial
+College London, his dissertation focused on the "Generalised Immersed Boundary
+Methods for Finite-Difference Geophysical Wavefield Modelling". This seminal
+work delved into the challenges posed by topography in wavefield modelling on
+finite-difference grids. Through a blend of abstraction and automation, he
+formulated a method to tackle these challenges, culminating in the development
+of a software framework, Schism, which automates the process of devising
+immersed boundaries.
+
+Ed's journey in geophysics began with a first-class MSci degree at Imperial
+College London. His final year project shed light on the optimization of
+stencils for wave modeling in Devito. His various research stints include an
+internship at TGS, a research assistant at Imperial College where he worked on a
+mantle-scale tomographic model, and a significant contribution as a Graduate
+Teaching Assistant for programming and continental tectonics. 
+
+Ed's research interests span seismic imaging, finite-difference methods,
+boundary conditions, wavefield modeling, and full-waveform inversion (FWI). His
+multidisciplinary approach to geophysics and computational science has
+positioned him as a valuable asset to the Devito Codes Ltd. team.
