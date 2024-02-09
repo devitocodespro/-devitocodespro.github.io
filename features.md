@@ -7,34 +7,7 @@ description: DevitoPRO features
 permalink: /features/
 ---
 
-## DevitoPRO feature overview
-
-
-### Architectures and Parallel Programming Models Supported
-* CPUs (AMD, ARM, Intel)				
-* GPUs (AMD/HIP, NVidia/CUDA, Intel/SYCL)				
-* Multi-node parallelism via MPI [cpu-only]
-
-### IO
-* Lazy data streaming from/to GPUs
-* Lossy compression of data
-* Serialization of data to disk
-* Asynchronous IO
-
-### Algorithmic Optimizations
-* Optimized MPI communications on GPUs				
-* Adaptive (expanding/contracting) box				
-* Comprehensive performance autotuning
-* Leading edge performance optimization
-
-### Recipe of Solvers (forward and adjoint)
-* Isotropic acoustic and visco-acoustic
-* Isotropic elastic and visco-elastic
-* VTI visco-acoustic
-* TTI acoustic
-* Elastic TTI
-
-## Features comparison
+## Devito/DevitoPRO feature overview
 
 <table>
     <tr align="center">
@@ -61,37 +34,42 @@ permalink: /features/
       <td><i class="fas fa-check text-xl"></i></td>
     </tr> 
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> NVidia GPUs - OpenMP, OpenACC</td>
+      <td align="right" style="padding-left:10px">NVidia GPUs - OpenMP, OpenACC</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr> 
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> AMD GPUs - HIP</td>
+      <td align="right" style="padding-left:10px">AMD GPUs - HIP</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
         <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> Intel GPUs - SYCL</td>
+      <td align="right" style="padding-left:10px">Intel GPUs - SYCL</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i>(beta)</td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> NVidia GPUs - CUDA</td>
+      <td align="right" style="padding-left:10px">NVidia GPUs - CUDA</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> Multi-node parallel via MPI</td>
+      <td align="right" style="padding-left:10px">Multi-node parallel via MPI</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>    
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> Optimized MPI communications on GPUs</td>
+      <td align="right" style="padding-left:10px">Optimized MPI communications on GPUs</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> Lazy data streaming from/to GPUs</td>
+      <td align="right" style="padding-left:10px">Lazy data streaming from/to GPUs</td>
+      <td></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr align="center" bgcolor="#e6fff6">
+      <td align="right" style="padding-left:10px">Asynchronous IO</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
@@ -134,7 +112,7 @@ permalink: /features/
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Floating-point (lossy) compression</td>
+      <td align="right" style="padding-left:10px">Lossy data compression</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
