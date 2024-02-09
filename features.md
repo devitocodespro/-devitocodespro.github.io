@@ -24,52 +24,47 @@ permalink: /features/
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">CPUs (Intel, AMD, ARM)</td>
+      <td align="right" style="padding-left:10px">Support for CPUs across AMD, ARM, and Intel architectures</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">AMD GPUs - OpenMP</td>
+      <td align="right" style="padding-left:10px">Support for AMD GPUs with OpenMP compatibility</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr> 
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">NVidia GPUs - OpenMP, OpenACC</td>
+      <td align="right" style="padding-left:10px"> Support for NVidia GPUs with OpenMP and OpenACC support</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr> 
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">AMD GPUs - HIP</td>
+      <td align="right" style="padding-left:10px"> Support for AMD GPUs through HIP technology</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-        <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Intel GPUs - SYCL</td>
+    <tr align="center" bgcolor="#e6fff6">
+      <td align="right" style="padding-left:10px"> Support for Intel GPUs with SYCL (beta)</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i>(beta)</td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">NVidia GPUs - CUDA</td>
+      <td align="right" style="padding-left:10px"> Support for NVidia GPUs via CUDA</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Multi-node parallel via MPI</td>
+      <td align="right" style="padding-left:10px">Enables multi-node parallelism through MPI for CPU-based computations</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>    
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Optimized MPI communications on GPUs</td>
+      <td align="right" style="padding-left:10px">Enhanced MPI communications optimization for GPUs</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Lazy data streaming from/to GPUs</td>
-      <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Asynchronous I/O</td>
+      <td align="right" style="padding-left:10px">Facilitates lazy data streaming to and from GPUs</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
@@ -87,12 +82,12 @@ permalink: /features/
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Custom operators (for, e.g., BCs)</td>
+      <td align="right" style="padding-left:10px">Custom operators for boundary conditions and more</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Sub-domains, staggered-grids, sub-sampling</td>
+      <td align="right" style="padding-left:10px">Supports sub-domains, staggered-grids, and sub-sampling techniques</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
@@ -107,32 +102,32 @@ permalink: /features/
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Reduced-precision</td>
+      <td align="right" style="padding-left:10px">Support for reduced-precision computations</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Lossy data compression</td>
+      <td align="right" style="padding-left:10px">Implements lossy data compression for floating-point data</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Serialization of data to disk</td>
+      <td align="right" style="padding-left:10px">Enables serialization of data for disk storage</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Calls to external C/C++ functions</td>
+      <td align="right" style="padding-left:10px">Integration with external C/C++ functions for extended functionality</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Adaptive (expanding/contracting) box</td>
+      <td align="right" style="padding-left:10px">Utilizes an adaptive box for dynamic spatial domain adjustments</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Comprehensive performance autotuning</td>
+      <td align="right" style="padding-left:10px">Comprehensive solution for performance autotuning to optimize execution</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
@@ -140,27 +135,27 @@ permalink: /features/
         <td style="padding-left:10px" colspan="5"><i>Solvers (forward and adjoint), 2D/3D</i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Isotropic (visco-)acoustic</td>
+      <td align="right" style="padding-left:10px">Solvers for isotropic acoustic and visco-acoustic equations</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Isotropic (cisco-)elastic</td>
+      <td align="right" style="padding-left:10px">Solvers for isotropic elastic and visco-elastic equations</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Acoustic TTI</td>
+      <td align="right" style="padding-left:10px">Acoustic TTI solvers for advanced seismic imaging</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">VTI visco-acoustic</td>
+      <td align="right" style="padding-left:10px">Solvers for VTI visco-acoustic equations for anisotropic media</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Elastic TTI</td>
+      <td align="right" style="padding-left:10px">Elastic TTI solvers for comprehensive seismic modeling</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
@@ -187,7 +182,4 @@ permalink: /features/
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-
 </table>
-
-
