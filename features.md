@@ -9,15 +9,30 @@ permalink: /features/
 
 ## DevitoPRO feature overview
 
-* CPUs (Intel, AMD, ARM)				
-* GPUs (NVidia, AMD)				
-* Multi-node architectures via MPI				
+
+### Architectures and Parallel Programming Models Supported
+* CPUs (AMD, ARM, Intel)				
+* GPUs (AMD/HIP, NVidia/CUDA, Intel/SYCL)				
+* Multi-node parallelism via MPI [cpu-only]
+
+### IO
 * Lazy data streaming from/to GPUs
-* Lossy-compression of data				
-* Serialization of data to disk 
+* Lossy compression of data
+* Serialization of data to disk
+* Asynchronous IO
+
+### Algorithmic Optimizations
 * Optimized MPI communications on GPUs				
 * Adaptive (expanding/contracting) box				
 * Comprehensive performance autotuning
+* Leading edge performance optimization
+
+### Recipe of Solvers (forward and adjoint)
+* Isotropic acoustic and visco-acoustic
+* Isotropic elastic and visco-elastic
+* VTI visco-acoustic
+* TTI acoustic
+* Elastic TTI
 
 ## Features comparison
 
@@ -53,12 +68,17 @@ permalink: /features/
     <tr align="center" bgcolor="#e6fff6">
       <td align="right" style="padding-left:10px"> AMD GPUs - HIP</td>
       <td></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+        <tr align="center" bgcolor="#e6fff6">
+      <td align="right" style="padding-left:10px"> Intel GPUs - SYCL</td>
+      <td></td>
       <td><i class="fas fa-check text-xl"></i>(beta)</td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
       <td align="right" style="padding-left:10px"> NVidia GPUs - CUDA</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i>(beta)</td>
+      <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
       <td align="right" style="padding-left:10px"> Multi-node parallel via MPI</td>
@@ -124,40 +144,45 @@ permalink: /features/
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> Calls to external C/C++ functions</td>
+      <td align="right" style="padding-left:10px">Calls to external C/C++ functions</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> Adaptive (expanding/contracting) box</td>
+      <td align="right" style="padding-left:10px">Adaptive (expanding/contracting) box</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> Comprehensive performance autotuning</td>
+      <td align="right" style="padding-left:10px">Comprehensive performance autotuning</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="left" bgcolor="#75C3A5">
-        <td style="padding-left:10px" colspan="5"><i>Solver examples</i></td>
+        <td style="padding-left:10px" colspan="5"><i>Solvers (forward and adjoint), 2D/3D</i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> Isotropic (visco)acoustic + adjoints</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> Isotropic (visco)elastic</td>
+      <td align="right" style="padding-left:10px">Isotropic (visco-)acoustic</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> TTI acoustic + adjoints</td>
+      <td align="right" style="padding-left:10px">Isotropic (cisco-)elastic</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px"> VTI viscoacoustic + adjoints</td>
+      <td align="right" style="padding-left:10px">Acoustic TTI</td>
+      <td><i class="fas fa-check text-xl"></i></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr align="center" bgcolor="#e6fff6">
+      <td align="right" style="padding-left:10px">VTI visco-acoustic</td>
+      <td></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr align="center" bgcolor="#e6fff6">
+      <td align="right" style="padding-left:10px">Elastic TTI</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
@@ -186,3 +211,5 @@ permalink: /features/
     </tr>
 
 </table>
+
+
