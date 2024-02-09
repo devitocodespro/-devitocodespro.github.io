@@ -36,7 +36,7 @@ Computer Science from Imperial College where he worked on compiler
 technologies for mathematical modeling software - specifically floating
 point reduction algorithms and data locality optimizations for
 finite-elements within the open source software Firedrake. Fabio is the lead
-software architect of Devito and has more than 8 years experience working on
+software architect of Devito and has more than a decade of experience working on
 the boundaries between computer science, high-performance computing and
 mathematical modeling.
 

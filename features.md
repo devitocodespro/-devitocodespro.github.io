@@ -69,7 +69,7 @@ permalink: /features/
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
     <tr align="center" bgcolor="#e6fff6">
-      <td align="right" style="padding-left:10px">Asynchronous IO</td>
+      <td align="right" style="padding-left:10px">Asynchronous I/O</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
