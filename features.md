@@ -25,6 +25,7 @@ permalink: /features/
     background-color: #e6fff6;
     text-align: center;
 }
+
 </style>
 
 <table width="100%">
@@ -34,33 +35,32 @@ permalink: /features/
     <td class="top aligned"><h3 class="ui header"><b>DevitoPRO</b></h3></td>
   </tr>
   <tr class="feature-row">
-    <td colspan="3"> Domain-specific language
-      (DSL) for finite-differences </td>
+    <td colspan="3"> Domain-specific language (DSL) for finite-differences </td>
   </tr>
   <tr class="content-row">
     <td>Write PDE solvers symbolically</td>
-    <td><i class="fas fa-check text-xl"></i></td>
-    <td><i class="fas fa-check text-xl"></i></td>
+    <td>✔</td>
+    <td>✔</td>
   </tr>
   <tr class="content-row">
     <td>Tensor algebra</td>
-    <td><i class="fas fa-check text-xl"></i></td>
-    <td><i class="fas fa-check text-xl"></i></td>
+    <td>✔</td>
+    <td>✔</td>
   </tr>
   <tr class="content-row">
     <td>Taylor series weights for any order</td>
-    <td><i class="fas fa-check text-xl"></i></td>
-    <td><i class="fas fa-check text-xl"></i></td>
+    <td>✔</td>
+    <td>✔</td>
   </tr>
   <tr class="content-row">
     <td>Customizable stencil weights</td>
-    <td><i class="fas fa-check text-xl"></i></td>
-    <td><i class="fas fa-check text-xl"></i></td>
+    <td>✔</td>
+    <td>✔</td>
   </tr>
   <tr class="content-row">
     <td>Explicit methods</td>
-    <td><i class="fas fa-check text-xl"></i></td>
-    <td><i class="fas fa-check text-xl"></i></td>
+    <td>✔</td>
+    <td>✔</td>
   </tr>
   <tr class="content-row">
     <td>Implicit methods (via PETSc)</td>
@@ -69,39 +69,39 @@ permalink: /features/
   </tr>
   <tr class="content-row">
     <td>Source/receivers (fully customizable)</td>
-    <td><i class="fas fa-check text-xl"></i></td>
-    <td><i class="fas fa-check text-xl"></i></td>
+    <td>✔</td>
+    <td>✔</td>
   </tr>
   <tr class="content-row">
     <td>Boundary conditions (fully customizable)</td>
-    <td><i class="fas fa-check text-xl"></i></td>
-    <td><i class="fas fa-check text-xl"></i></td>
+    <td>✔</td>
+    <td>✔</td>
   </tr>
   <tr class="content-row">
     <td>Staggered grids</td>
-    <td><i class="fas fa-check text-xl"></i></td>
-    <td><i class="fas fa-check text-xl"></i></td>
+    <td>✔</td>
+    <td>✔</td>
   </tr>
   <tr class="content-row">
     <td>Subsampling (e.g. space/time decimation)</td>
-    <td><i class="fas fa-check text-xl"></i></td>
-    <td><i class="fas fa-check text-xl"></i></td>
+    <td>✔</td>
+    <td>✔</td>
   </tr>
     <tr class="content-row">
       <td>Subdomains</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>API for third-party library callbacks</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Jupyter notebook tutorials,
       examples and documentation</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>
     <tr class="feature-row">
         <td colspan="3"> PDE-constrained optimization
@@ -110,29 +110,29 @@ permalink: /features/
     <tr class="content-row">
       <td>Express adjoint-method optimization
       problems symbolically</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Checkpoint(/Revolve)-based back-propagation</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Compression-based back-propagation</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Intelligent data-streaming disk-host-GPU</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Lossy data compression for
       floating-point data</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="feature-row">
       <td colspan="3"> Algorithmic and compiler
@@ -141,17 +141,17 @@ permalink: /features/
     <tr class="content-row">
       <td>Expanding-box (only compute active domain)</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Mixed-precision computation</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Data-locality optimization (e.g. cache-blocking)</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td> Auto-tuning</td>
@@ -166,48 +166,48 @@ permalink: /features/
     <tr class="content-row">
       <td>Advanced low-level optimization (e.g., memory alignment)</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="feature-row">
         <td colspan="3">Supported architectures</td>
     </tr>
     <tr class="content-row">
       <td>CPUs: AMD, ARM, and Intel</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>GPUs: AMD, Intel, Nvidia</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Accelerators: Intel KNC, KNL</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>
     <tr class="feature-row">
         <td colspan="3"> Programming models </td>
     </tr>
     <tr class="content-row">
       <td>OpenMP for CPUs and GPUs</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>  
     <tr class="content-row">
       <td>OpenACC for Nvidia GPUs</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>CUDA</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>HIP</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>SYCL</td>
@@ -216,13 +216,13 @@ permalink: /features/
     </tr>
     <tr class="content-row">
       <td>NUMA-aware MPI-OpenMP</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>MPI: Single-node-multi-gpu</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>MPI: Multi-node-multi-gpu</td>
@@ -232,7 +232,7 @@ permalink: /features/
     <tr class="content-row">
       <td>Optimized GPU-aware MPI</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="feature-row">
         <td colspan="3">Supported cloud platforms</td>
@@ -240,17 +240,17 @@ permalink: /features/
     <tr class="content-row">
       <td>AWS</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Azure</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>GCP</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="feature-row">
         <td colspan="3">Devito Cookbook
@@ -258,28 +258,28 @@ permalink: /features/
     </tr>
     <tr class="content-row">
       <td>Isotropic acoustic and viscoacoustic</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Isotropic elastic and viscoelastic</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Acoustic VTI and TTI</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Viscoacoustic VTI and TTI</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Elastic VTI and TTI</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="feature-row">
         <td colspan="3"><i>
@@ -290,44 +290,44 @@ permalink: /features/
     <tr class="content-row">
       <td>Access to benchmark reports and raw logs for reproducibility.</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Cloud instance tuning and benchmarking.</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="feature-row">
       <td colspan="3"> Support </td>
     </tr>
     <tr class="content-row">
       <td>Slack: community support on public channels</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr> 
+      <td>✔</td>
+      <td>✔</td>
+    </tr>
     <tr class="content-row">
       <td>Slack: Private/NDA support channels</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr> 
+      <td>✔</td>
+    </tr>
     <tr class="content-row">
       <td>Projects</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Training</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Consultancy</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>Support/maintenance</td>
       <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+      <td>✔</td>
     </tr>
 </table>
