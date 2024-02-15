@@ -7,268 +7,326 @@ description: DevitoPRO features
 permalink: /features/
 ---
 
-<table>
-    <tr align="center">
-      <td class="top aligned"><h3 class="ui header"><b>Features</b></h3></td>
-      <td class="top aligned"><h3 class="ui header"><b>Devito (Open-source)</b></h3></td>
-      <td class="top aligned"><h3 class="ui header"><b>DevitoPRO</b></h3></td>
-    </tr>
-    <tr align="left" bgcolor="#75C3A5">
-        <td style="padding-left:10px" colspan="5"><i>Domain-specific language (DSL) for finite-differences</i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Write PDE solvers symbolically</td>
+<style>
+.table-cell {
+    padding-left: 10px;
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.feature-row td{
+    background-color: #75C3A5;
+    font-style: italic;
+    text-align: left;
+}
+
+.content-row td{
+    background-color: #e6fff6;
+    text-align: center;
+}
+</style>
+
+<table width="100%">
+  <tr class="table-cell">
+    <td class="top aligned"><h3 class="ui header"><b>Features</b></h3></td>
+    <td class="top aligned"><h3 class="ui header"><b>Devito (Open-source)</b></h3></td>
+    <td class="top aligned"><h3 class="ui header"><b>DevitoPRO</b></h3></td>
+  </tr>
+  <tr class="feature-row">
+    <td colspan="3"> Domain-specific language
+      (DSL) for finite-differences </td>
+  </tr>
+  <tr class="content-row">
+    <td>Write PDE solvers symbolically</td>
+    <td><i class="fas fa-check text-xl"></i></td>
+    <td><i class="fas fa-check text-xl"></i></td>
+  </tr>
+  <tr class="content-row">
+    <td>Tensor algebra</td>
+    <td><i class="fas fa-check text-xl"></i></td>
+    <td><i class="fas fa-check text-xl"></i></td>
+  </tr>
+  <tr class="content-row">
+    <td>Taylor series weights for any order</td>
+    <td><i class="fas fa-check text-xl"></i></td>
+    <td><i class="fas fa-check text-xl"></i></td>
+  </tr>
+  <tr class="content-row">
+    <td>Customizable stencil weights</td>
+    <td><i class="fas fa-check text-xl"></i></td>
+    <td><i class="fas fa-check text-xl"></i></td>
+  </tr>
+  <tr class="content-row">
+    <td>Explicit methods</td>
+    <td><i class="fas fa-check text-xl"></i></td>
+    <td><i class="fas fa-check text-xl"></i></td>
+  </tr>
+  <tr class="content-row">
+    <td>Implicit methods (via PETSc)</td>
+    <td>Alpha</td>
+    <td>Alpha</td>
+  </tr>
+  <tr class="content-row">
+    <td>Source/receivers (fully customizable)</td>
+    <td><i class="fas fa-check text-xl"></i></td>
+    <td><i class="fas fa-check text-xl"></i></td>
+  </tr>
+  <tr class="content-row">
+    <td>Boundary conditions (fully customizable)</td>
+    <td><i class="fas fa-check text-xl"></i></td>
+    <td><i class="fas fa-check text-xl"></i></td>
+  </tr>
+  <tr class="content-row">
+    <td>Staggered grids</td>
+    <td><i class="fas fa-check text-xl"></i></td>
+    <td><i class="fas fa-check text-xl"></i></td>
+  </tr>
+  <tr class="content-row">
+    <td>Subsampling (e.g. space/time decimation)</td>
+    <td><i class="fas fa-check text-xl"></i></td>
+    <td><i class="fas fa-check text-xl"></i></td>
+  </tr>
+    <tr class="content-row">
+      <td>Subdomains</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Tensor algebra</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Taylor series weights for any order</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Customizable stencil weights</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Explicit methods</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Implicit methods (via PETSc)</td>
-      <td>Alpha</td>
-      <td>Alpha</td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Source/receivers (fully customizable)</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Boundary conditions (fully customizable)</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Staggered-grids</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Sub-sampling (e.g. space/time decimation)</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Sub-domains</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Mixed-precision computation</td>
+    <tr class="content-row">
+      <td>API for third-party library callbacks</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">API for third-party library callbacks</td>
+    <tr class="content-row">
+      <td>Jupyter notebook tutorials,
+      examples and documentation</td>
+      <td><i class="fas fa-check text-xl"></i></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr class="feature-row">
+        <td colspan="3"> PDE-constrained optimization
+        and adjoint method </td>
+    </tr>
+    <tr class="content-row">
+      <td>Express adjoint-method optimization
+      problems symbolically</td>
+      <td><i class="fas fa-check text-xl"></i></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr class="content-row">
+      <td>Checkpoint(/Revolve)-based back-propagation</td>
+      <td><i class="fas fa-check text-xl"></i></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr class="content-row">
+      <td>Compression-based back-propagation</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Jupyter notebook tutorials, examples and documentation</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="left" bgcolor="#75C3A5">
-        <td style="padding-left:10px" colspan="5"><i>PDE-constrained optimization and adjoint method</i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Express adjoint-method optimization problems symbolically</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Revolve-Based back-propagation</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Compression-based back-propagation</td>
+    <tr class="content-row">
+      <td>Intelligent data-streaming disk-host-GPU</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Intelligent data-streaming disk-host-GPU</td>
+    <tr class="content-row">
+      <td>Lossy data compression for
+      floating-point data</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Lossy data compression for floating-point data</td>
+    <tr class="feature-row">
+      <td colspan="3"> Algorithmic and compiler
+          performance optimizations </td>
+    </tr>
+    <tr class="content-row">
+      <td>Expanding-box (only compute active domain)</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="left" bgcolor="#75C3A5">
-        <td style="padding-left:10px" colspan="5"><i>Algorithmic and compiler performance optimizations</i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Expanding-box (only compute active domain)</td>
+    <tr class="content-row">
+      <td>Mixed-precision computation</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Mixed-precision computation</td>
-      <td></td>
+    <tr class="content-row">
+      <td>Data-locality optimization (e.g. cache-blocking)</td>
+      <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Data-locality optimization (e.g. cache-blocking)</td>
-      <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Autotuning</td>
+    <tr class="content-row">
+      <td> Auto-tuning</td>
       <td>Basic</td>
       <td>Advanced</td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">FLOP reduction (e.g. factorization, hoisting, CSE)</td>
+    <tr class="content-row">
+      <td>FLOP reduction (e.g. factorization, hoisting, CSE)</td>
+      <td>Comprehensive</td>
+      <td>Advanced</td>
+    </tr>
+    <tr class="content-row">
+      <td>Advanced low-level optimization (e.g., memory alignment)</td>
+      <td></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr class="feature-row">
+        <td colspan="3">Supported architectures</td>
+    </tr>
+    <tr class="content-row">
+      <td>CPUs: AMD, ARM, and Intel</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="left" bgcolor="#75C3A5">
-        <td style="padding-left:10px" colspan="5"><i>Supported architectures</i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">CPUs: AMD, ARM, and Intel</td>
+    <tr class="content-row">
+      <td>GPUs: AMD, Intel, Nvidia</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">GPUs: AMD, Intel, Nvidia</td>
+    <tr class="content-row">
+      <td>Accelerators: Intel KNC, KNL</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Accelerators: Intel KNC, KNL</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
+    <tr class="feature-row">
+        <td colspan="3"> Programming models </td>
     </tr>
-    <tr align="left" bgcolor="#75C3A5">
-        <td style="padding-left:10px" colspan="5"><i>Programming models</i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">OpenMP for CPUs and GPUs</td>
+    <tr class="content-row">
+      <td>OpenMP for CPUs and GPUs</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>  
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">OpenACC for Nvidia GPUs</td>
+    <tr class="content-row">
+      <td>OpenACC for Nvidia GPUs</td>
       <td><i class="fas fa-check text-xl"></i></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">CUDA</td>
+    <tr class="content-row">
+      <td>CUDA</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">HIP</td>
+    <tr class="content-row">
+      <td>HIP</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">SYCL</td>
-      <td></td>
-      <td>Beta</td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">NUMA-aware MPI-OpenMP</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">MPI: Single-node-multi-gpu</td>
-      <td></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>    
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">MPI: Multi-node-multi-gpu</td>
+    <tr class="content-row">
+      <td>SYCL</td>
       <td></td>
       <td>Beta</td>
     </tr>
-    <tr align="left" bgcolor="#75C3A5">
-        <td style="padding-left:10px" colspan="5"><i>Supported Cloud platforms</i></td>
+    <tr class="content-row">
+      <td>NUMA-aware MPI-OpenMP</td>
+      <td><i class="fas fa-check text-xl"></i></td>
+      <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">AWS</td>
+    <tr class="content-row">
+      <td>MPI: Single-node-multi-gpu</td>
+      <td><i class="fas fa-check text-xl"></i></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr class="content-row">
+      <td>MPI: Multi-node-multi-gpu</td>
+      <td></td>
+      <td>Beta</td>
+    </tr>
+    <tr class="content-row">
+      <td>Optimized GPU-aware MPI</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Azure</td>
+    <tr class="feature-row">
+        <td colspan="3">Supported cloud platforms</td>
+    </tr>
+    <tr class="content-row">
+      <td>AWS</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">GCP</td>
+    <tr class="content-row">
+      <td>Azure</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="left" bgcolor="#75C3A5">
-        <td style="padding-left:10px" colspan="5"><i>Solvers (forward and adjoint), 2D/3D</i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Isotropic acoustic and visco-acoustic</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Isotropic elastic and visco-elastic</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Acoustic TTI</td>
-      <td><i class="fas fa-check text-xl"></i></td>
-      <td><i class="fas fa-check text-xl"></i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">VTI visco-acoustic equations for anisotropic media</td>
+    <tr class="content-row">
+      <td>GCP</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Elastic TTI</td>
+    <tr class="feature-row">
+        <td colspan="3">Devito Cookbook
+        (includes forward, adjoint and 2D/3D)</td>
+    </tr>
+    <tr class="content-row">
+      <td>Isotropic acoustic and viscoacoustic</td>
+      <td><i class="fas fa-check text-xl"></i></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr class="content-row">
+      <td>Isotropic elastic and viscoelastic</td>
+      <td><i class="fas fa-check text-xl"></i></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr class="content-row">
+      <td>Acoustic VTI and TTI</td>
+      <td><i class="fas fa-check text-xl"></i></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr class="content-row">
+      <td>Viscoacoustic VTI and TTI</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="left" bgcolor="#75C3A5">
-        <td style="padding-left:10px" colspan="5"><i>Support</i></td>
-    </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Projects</td>
+    <tr class="content-row">
+      <td>Elastic VTI and TTI</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Training</td>
+    <tr class="feature-row">
+        <td colspan="3"><i>
+        Cross-platform industry benchmarks. Includes iso-acoustic and acoustic
+        TTI. All benchmarks are independently autotuned to get best performance
+        on each target.</i></td>
+    </tr>
+    <tr class="content-row">
+      <td>Access to benchmark reports and raw logs for reproducibility.</td>
+      <td></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr class="content-row">
+      <td>Cloud instance tuning and benchmarking.</td>
+      <td></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr class="feature-row">
+      <td colspan="3"> Support </td>
+    </tr>
+    <tr class="content-row">
+      <td>Slack: community support on public channels</td>
+      <td><i class="fas fa-check text-xl"></i></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr> 
+    <tr class="content-row">
+      <td>Slack: Private/NDA support channels</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr> 
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Consultancy</td>
+    <tr class="content-row">
+      <td>Projects</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
-    <tr align="center" bgcolor="#e6fff6">
-      <td align="left" style="padding-left:10px">Support/maintenance</td>
+    <tr class="content-row">
+      <td>Training</td>
+      <td></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr class="content-row">
+      <td>Consultancy</td>
+      <td></td>
+      <td><i class="fas fa-check text-xl"></i></td>
+    </tr>
+    <tr class="content-row">
+      <td>Support/maintenance</td>
       <td></td>
       <td><i class="fas fa-check text-xl"></i></td>
     </tr>
