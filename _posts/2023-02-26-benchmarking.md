@@ -1,5 +1,5 @@
 ---
-date: 2022-11-09T00:00:00.000Z
+date: 2023-02-26T00:00:00.000Z
 layout: post
 title: Cross-platform seismic imaging benchmarking
 subtitle: 'Optimization and benchmarking of seismic imaging workloads'
@@ -27,7 +27,11 @@ paginate: true
 mermaid: true
 ---
 
-We have launched a groundbreaking framework to benchmark seismic imaging workloads across different platforms. This initiative brings together key stakeholders from Devito, hardware vendors, cloud providers, and the broader industry, setting a stage for standardization, reproducibility, and elevated performance in seismic imaging workloads.
+We have launched a groundbreaking framework to benchmark seismic imaging
+workloads across different platforms. This initiative brings together key
+stakeholders from Devito, hardware vendors, cloud providers, and the broader
+industry, setting a stage for standardization, reproducibility, and elevated
+performance in seismic imaging workloads.
 
 Key Highlights:
 
@@ -103,23 +107,21 @@ and reproducible approach for comparing different methods, hardware, and skill.
     A-->B4(Other ISV, research, proprietary implementations)
     end
     subgraph Execution environment
-    B2-->C1(Docker container)
-    B2-->C2(Singularity container)
+    B2-->C1(Singularity)
+    B2-->C2(Docker)
+    B2-->C3(Conda)
     end
-    subgraph Target architecture
-    C1-->D1(Bare metal)
-    C2-->D2(Cloud)
-    D1-->E1(CPU)
-    D1-->E2(GPU)
-    D2-->E3(CPU)
-    D2-->E4(GPU)
+    subgraph Target platform
+    C1-->D1(On-Prem dev-cluster)
+    C1-->D2(Vendor/slurm dev-cluster)
+    C1-->D3(Public Cloud)
+    D1-->E1(Vendor CPUs)
+    D1-->E2(Vendor GPUs)
     end
     subgraph Standard: benchmark output
     F(JSON: performance metrics, solution norms, status, implementation specific metadata)
     E1-->F
     E2-->F
-    E3-->F
-    E4-->F
     end;
 </div>
 
@@ -207,11 +209,12 @@ Another fundamental aspect of our software infrastructure is the use of virtual
 containers, in particular Docker. This makes it straightforward to configure new
 machines and reproduce performance results. In our experience, virtual
 containers are the only realistic way of maintaining and extending a software
-and hardware infrastructure like the one we envision in this project. 
+and hardware infrastructure like the one we envision in this project.
 
 Currently, three benchmarks are configured:
 
 #### Isotropic acoustic
+
 * Shortcut: iso
 * Dimensions: 512x512x512
 * Number of time steps: 400
@@ -219,6 +222,7 @@ Currently, three benchmarks are configured:
 * Time order: 2
 
 #### Fletcher and Fowler TTI
+
 * Shortcut: tti_fl
 * Dimensions: 512x512x512
 * Number of time steps: 400
@@ -226,6 +230,7 @@ Currently, three benchmarks are configured:
 * Time order: 2
 
 #### Skew-adjoint TTI
+
 * Shortcut: tti_sa
 * Dimensions: 512x512x512
 * Number of time steps: 400
@@ -234,12 +239,27 @@ Currently, three benchmarks are configured:
 
 ### Results preview
 
-We have included a snapshot of results below. FLOPS (Floating Point Operations Per Second) is a well-recognized measure in High-Performance Computing (HPC), but it may not always be the most revealing. Its value can be inflated by employing inefficient numerical methods. In seismic imaging, GPts/s (Giga-Points Per Second) — also termed giga-cells-per-second — is often favored. This metric directly measures work throughput, offering a clearer gauge of performance. In essence, GPts/s helps in accurately estimating the time or cost required to solve a specific problem.
+We have included a snapshot of results below. FLOPS (Floating Point Operations
+Per Second) is a well-recognized measure in High-Performance Computing (HPC),
+but it may not always be the most revealing. Its value can be inflated by
+employing inefficient numerical methods. In seismic imaging, GPts/s (Giga-Points
+Per Second) — also termed giga-cells-per-second — is often favored. This metric
+directly measures work throughput, offering a clearer gauge of performance. In
+essence, GPts/s helps in accurately estimating the time or cost required to
+solve a specific problem.
 
-**Disclaimer:** *Although we have exerted maximum effort to guarantee precise, equitable, and replicable results, it is crucial to understand that the benchmarking framework is still in the alpha development phase. Consequently, the benchmarks provided here are preliminary and subject to change. The benchmark data should not be considered comprehensive or final, and are not suited for making any financial decisions.*
+**Disclaimer:** *Although we have exerted maximum effort to guarantee precise,
+*equitable, and replicable results, it is crucial to understand that the
+*benchmarking framework is still in the alpha development phase. Consequently,
+*the benchmarks provided here are preliminary and subject to change. The
+*benchmark data should not be considered comprehensive or final, and are not
+*suited for making any financial decisions.*
 
-*No warranty, express or implied, is provided with the data. The information is supplied on an "as is" basis. We expressly disclaim, to the maximum extent permitted by law, any liability for any damages or losses, direct or consequential, resulting from the use of these benchmarks. Please utilize this information responsibly, keeping in mind its tentative nature.*
-
+*No warranty, express or implied, is provided with the data. The information is
+*supplied on an "as is" basis. We expressly disclaim, to the maximum extent
+*permitted by law, any liability for any damages or losses, direct or
+*consequential, resulting from the use of these benchmarks. Please utilize this
+*information responsibly, keeping in mind its tentative nature.*
 
 ### 3D Isotropic acoustic
 
@@ -265,7 +285,6 @@ We have included a snapshot of results below. FLOPS (Floating Point Operations P
 | Intel(R) Xeon(R) Gold 5218R CPU    | 1.72  |
 | AMD EPYC 7413 24-Core Processor    | 0.797 |
 
-
 ### Future work
 
 * Add a link to the page capturing the benchmark characteristics
@@ -290,4 +309,4 @@ We have included a snapshot of results below. FLOPS (Floating Point Operations P
 
 Many thanks to Chevron for the funding and feedback to kickstart this
 initiative.  We would also like to thank AMD, AWS, Dell, Nvidia and
-Supermicro for providing hardware and cloud resources. 
+Supermicro for providing hardware and cloud resources.
