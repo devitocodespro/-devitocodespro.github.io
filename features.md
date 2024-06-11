@@ -212,7 +212,7 @@ permalink: /features/
     <tr class="content-row">
       <td>SYCL</td>
       <td></td>
-      <td>Beta</td>
+      <td>✔</td>
     </tr>
     <tr class="content-row">
       <td>NUMA-aware MPI-OpenMP</td>
