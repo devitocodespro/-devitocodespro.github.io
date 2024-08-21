@@ -33,6 +33,7 @@ show_hero: true
 # paginate: 24
 
 twitter_username: devitocodes
+linkedin_username: company/devitocodes
 
 menu:
   - title: Home
