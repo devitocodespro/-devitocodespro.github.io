@@ -34,6 +34,7 @@ show_hero: true
 
 twitter_username: devitocodes
 linkedin_username: company/devitocodes
+github_username: devitocodes
 
 menu:
   - title: Home
