@@ -21,12 +21,7 @@ Devito Codes Ltd is the commercial arm of the open-source platform
 ## Gerard Gorman, CEO and co-founder
 
 <img src="/assets/img/profile_Gerard.jpg" alt="Gerard Gorman" align="left"
-style="margin:0px 50px 50px 50px"/> Gerard has more than 20 years experience in
-high performance computing, research software development, numerical modeling,
-inverse problems, code generation and compilers. Gerard is also a Professor of
-Computational Science and Engineering and Director of the Applied Computational
-Science and Engineering MSc programme in the Department of Earth Science and
-Engineering, Imperial College London. 
+style="margin:0px 50px 50px 50px"/>Gerard is the CEO and co-founder of Devito Codes, where he leads the development of innovative high-performance computing (HPC) software solutions that bridge academic research and industry needs. With over 25 years of experience in multidisciplinary computational science research, he focuses on high-productivity HPC software frameworks for simulation, inversion, and optimization. He is also a Professor of Computational Science and Engineering at <a href="https://www.imperial.ac.uk/">Imperial College London</a>, where he is Director of the MSc in <a href="https://www.imperial.ac.uk/study/courses/postgraduate-taught/applied-computational-science/">Applied Computational Science and Engineering</a>.
 
 ## Fabio Luporini, CTO and co-founder
 
