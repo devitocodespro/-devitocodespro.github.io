@@ -7,6 +7,17 @@ description: DevitoPRO features
 permalink: /features/
 ---
 
+DevitoPRO is an enhanced, commercial extension of the open-source Devito, designed specifically for high-performance computing (HPC) tasks such as seismic imaging and inversion. While both platforms share a foundation in symbolic computation for developing finite-difference kernels, DevitoPRO offers several advanced features that cater to more complex, production-level workflows.
+
+Key differentiators include:
+
+* **Code Generation for GPUs and Accelerators**: DevitoPRO supports advanced GPU acceleration with CUDA, HIP, and SYCL, offering better performance portability across Nvidia, AMD, and Intel GPUs, compared to the more basic GPU support in the open-source Devito.
+* **Compression and Data Streaming**: It introduces compression-based back-propagation and intelligent disk-host-GPU data streaming, crucial for large-scale seismic workloads. This significantly improves memory management and performance during back-propagation, a feature absent in the open-source version.
+* **Advanced Optimizations**: DevitoPRO includes domain-specific optimizations like the *expanding-box* technique, which focuses computations only on active domains, leading to more efficient resource usage. The platform also offers mixed-precision computation and enhanced auto-tuning mechanisms for superior performance tuning.
+* **Enterprise-Ready Features**: It integrates with cloud platforms (AWS, Azure, GCP), offers tailored support services (e.g., private Slack channels), and provides advanced benchmarking, autotuning support that are critical for enterprise applications.
+
+These features make DevitoPRO a powerful option for organizations requiring robust, scalable, and highly optimized computational tools for seismic imaging.
+
 <style>
 .table-cell {
     padding-left: 10px;
