@@ -7,16 +7,18 @@ description: DevitoPRO features
 permalink: /features/
 ---
 
-DevitoPRO is an enhanced, commercial extension of the open-source Devito, designed specifically for high-performance computing (HPC) tasks such as seismic imaging and inversion. While both platforms share a foundation in symbolic computation for developing finite-difference kernels, DevitoPRO offers several advanced features that cater to more complex, production-level workflows.
+DevitoPRO, an advanced extension of the open-source Devito platform, is designed to cater specifically to high-performance computing (HPC) needs, especially in seismic imaging and inversion. While both platforms enable symbolic computation for developing finite-difference kernels, DevitoPRO offers several added features tailored for more demanding, production-level workflows.
 
-Key differentiators include:
+### Key Differentiators for Seismic Imaging Users:
+1. **Enhanced Performance Portability**: DevitoPRO supports advanced GPU acceleration using CUDA, HIP, and SYCL, offering better cross-platform flexibility. This means you can deploy high-performance applications on most commercially available processors, including Nvidia, AMD, and Intel GPUs, as well as ARM and x86_64 processors. Performance portability is crucial for both on-premise and cloud environments, where availability has become as important a consideration as price performance. DevitoPRO’s portability maintains performance even as you switch between available cloud instances or on-premise hardware.
 
-* **Code Generation for GPUs and Accelerators**: DevitoPRO supports advanced GPU acceleration with CUDA, HIP, and SYCL, offering better performance portability across Nvidia, AMD, and Intel GPUs, compared to the more basic GPU support in the open-source Devito.
-* **Compression and Data Streaming**: It introduces compression-based back-propagation and intelligent disk-host-GPU data streaming, crucial for large-scale seismic workloads. This significantly improves memory management and performance during back-propagation, a feature absent in the open-source version.
-* **Advanced Optimizations**: DevitoPRO includes domain-specific optimizations like the *expanding-box* technique, which focuses computations only on active domains, leading to more efficient resource usage. The platform also offers mixed-precision computation and enhanced auto-tuning mechanisms for superior performance tuning.
-* **Enterprise-Ready Features**: It integrates with cloud platforms (AWS, Azure, GCP), offers tailored support services (e.g., private Slack channels), and provides advanced benchmarking, autotuning support that are critical for enterprise applications.
+2. **Advanced Domain-Specific Optimizations**: DevitoPRO introduces a wide range of optimizations like the expanding-box technique, which focuses computational resources only on active domains, resulting in more efficient memory and compute usage. We are also increasing support for mixed-precision computation options, which reduce memory pressure without compromising accuracy, further enhancing performance for seismic imaging tasks.
 
-These features make DevitoPRO a powerful option for organizations requiring robust, scalable, and highly optimized computational tools for seismic imaging.
+3. **Compression and Data Streaming for Back-Propagation**: A key feature for production seismic workloads, DevitoPRO integrates compression-based back-propagation and asyncronious data-streaming techniques to optimize disk-host-GPU transfers. This is essential for handling the large datasets typically involved in seismic imaging, significantly improving memory management and computational efficiency during reverse time migration (RTM) and full-waveform inversion (FWI).
+
+4. **Enterprise-Ready Features**: DevitoPRO integrates seamlessly with major cloud platforms like AWS, Azure, and Google Cloud, and offers specific support for tuning and benchmarking cloud instances. The platform includes pre-defined, optimized propagators for common seismic tasks, reducing development overhead and allowing teams to immediately leverage high-performance solutions. Additionally, DevitoPRO offers enterprise-grade support, including tailored benchmarking and private consultation services, which are critical for production-level applications.
+
+These features make DevitoPRO an essential tool for seismic imaging professionals who need robust, scalable, and highly optimized computational tools that can adapt to fluctuating hardware availability and complex workflows.
 
 <style>
 .table-cell {
@@ -64,8 +66,13 @@ These features make DevitoPRO a powerful option for organizations requiring robu
     <td>✔</td>
   </tr>
   <tr class="content-row">
-    <td>Customizable stencil weights</td>
+    <td>Customizable stencil weights (eg variable-z, dispersion minimizing)</td>
     <td>✔</td>
+    <td>✔</td>
+  </tr>
+  <tr class="content-row">
+    <td>Immersed boundary support (eg accurate land topography)</td>
+    <td></td>
     <td>✔</td>
   </tr>
   <tr class="content-row">
@@ -114,6 +121,35 @@ These features make DevitoPRO a powerful option for organizations requiring robu
       <td>✔</td>
       <td>✔</td>
     </tr>
+        <tr class="feature-row">
+        <td colspan="3">Devito Cookbook
+        (includes forward, adjoint and 2D/3D)</td>
+    </tr>
+    <tr class="content-row">
+      <td>Isotropic acoustic and viscoacoustic</td>
+      <td>✔</td>
+      <td>✔</td>
+    </tr>
+    <tr class="content-row">
+      <td>Isotropic elastic and viscoelastic</td>
+      <td>✔</td>
+      <td>✔</td>
+    </tr>
+    <tr class="content-row">
+      <td>Acoustic VTI and TTI</td>
+      <td>✔</td>
+      <td>✔</td>
+    </tr>
+    <tr class="content-row">
+      <td>Viscoacoustic VTI and TTI</td>
+      <td></td>
+      <td>✔</td>
+    </tr>
+    <tr class="content-row">
+      <td>Elastic VTI and TTI</td>
+      <td></td>
+      <td>✔</td>
+    </tr>
     <tr class="feature-row">
         <td colspan="3"> PDE-constrained optimization
         and adjoint method </td>
@@ -150,6 +186,16 @@ These features make DevitoPRO a powerful option for organizations requiring robu
           performance optimizations </td>
     </tr>
     <tr class="content-row">
+      <td>Decoupler (software integration layer for seismic codes)</td>
+      <td></td>
+      <td>✔</td>
+    </tr> 
+    <tr class="content-row">
+      <td>Automated multi-level parallelization</td>
+      <td></td>
+      <td>✔</td>
+    </tr> 
+    <tr class="content-row">
       <td>Expanding-box (only compute active domain)</td>
       <td></td>
       <td>✔</td>
@@ -165,7 +211,7 @@ These features make DevitoPRO a powerful option for organizations requiring robu
       <td>✔</td>
     </tr>
     <tr class="content-row">
-      <td> Auto-tuning</td>
+      <td>Autotuning/Devitotuner</td>
       <td>Basic</td>
       <td>Advanced</td>
     </tr>
@@ -264,35 +310,6 @@ These features make DevitoPRO a powerful option for organizations requiring robu
       <td>✔</td>
     </tr>
     <tr class="feature-row">
-        <td colspan="3">Devito Cookbook
-        (includes forward, adjoint and 2D/3D)</td>
-    </tr>
-    <tr class="content-row">
-      <td>Isotropic acoustic and viscoacoustic</td>
-      <td>✔</td>
-      <td>✔</td>
-    </tr>
-    <tr class="content-row">
-      <td>Isotropic elastic and viscoelastic</td>
-      <td>✔</td>
-      <td>✔</td>
-    </tr>
-    <tr class="content-row">
-      <td>Acoustic VTI and TTI</td>
-      <td>✔</td>
-      <td>✔</td>
-    </tr>
-    <tr class="content-row">
-      <td>Viscoacoustic VTI and TTI</td>
-      <td></td>
-      <td>✔</td>
-    </tr>
-    <tr class="content-row">
-      <td>Elastic VTI and TTI</td>
-      <td></td>
-      <td>✔</td>
-    </tr>
-    <tr class="feature-row">
         <td colspan="3"><i>
         Cross-platform industry benchmarks. Includes iso-acoustic and acoustic
         TTI. All benchmarks are independently autotuned to get best performance
@@ -309,7 +326,7 @@ These features make DevitoPRO a powerful option for organizations requiring robu
       <td>✔</td>
     </tr>
     <tr class="feature-row">
-      <td colspan="3"> Support </td>
+      <td colspan="3">Support</td>
     </tr>
     <tr class="content-row">
       <td>Slack: community support on public channels</td>
