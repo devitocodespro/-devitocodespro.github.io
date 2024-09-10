@@ -28,10 +28,14 @@ These features make DevitoPRO an essential tool for seismic imaging professional
     text-align: center;
 }
 
+.toggle-content {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
 .feature-row td{
     background-color: #75C3A5;
-    font-style: italic;
-    text-align: left;
+     text-align: left;
 }
 
 .content-row td{
@@ -39,83 +43,102 @@ These features make DevitoPRO an essential tool for seismic imaging professional
     text-align: center;
 }
 
+.visible {
+    display: table-row;
+  }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const headings = document.querySelectorAll('.feature-row');
+    
+    headings.forEach(heading => {
+      heading.addEventListener('click', function() {
+        let nextRow = this.nextElementSibling;
+        while (nextRow && !nextRow.classList.contains('feature-row')) {
+          nextRow.classList.toggle('visible');
+          nextRow = nextRow.nextElementSibling;
+        }
+      });
+    });
+  });
+</script>
 
 <table width="100%">
   <tr class="table-cell">
-    <td class="top aligned"><h3 class="ui header"><b>Features</b></h3></td>
-    <td class="top aligned"><h3 class="ui header"><b>Devito (Open-source)</b></h3></td>
-    <td class="top aligned"><h3 class="ui header"><b>DevitoPRO</b></h3></td>
+    <td class="center"><b>Features</b></td>
+    <td class="center"><b>Open-source Devito</b></td>
+    <td class="center"><b>DevitoPRO</b></td>
   </tr>
   <tr class="feature-row">
     <td colspan="3"> Domain-specific language (DSL) for finite-differences </td>
   </tr>
-  <tr class="content-row">
+  <tr class="content-row toggle-content">
     <td>Write PDE solvers symbolically</td>
     <td>✔</td>
     <td>✔</td>
   </tr>
-  <tr class="content-row">
+  <tr class="content-row toggle-content">
     <td>Tensor algebra</td>
     <td>✔</td>
     <td>✔</td>
   </tr>
-  <tr class="content-row">
+  <tr class="content-row toggle-content">
     <td>Taylor series weights for any order</td>
     <td>✔</td>
     <td>✔</td>
   </tr>
-  <tr class="content-row">
+  <tr class="content-row toggle-content">
     <td>Customizable stencil weights (eg variable-z, dispersion minimizing)</td>
     <td>✔</td>
     <td>✔</td>
   </tr>
-  <tr class="content-row">
+  <tr class="content-row toggle-content">
     <td>Immersed boundary support (eg accurate land topography)</td>
     <td></td>
     <td>✔</td>
   </tr>
-  <tr class="content-row">
+  <tr class="content-row toggle-content">
     <td>Explicit methods</td>
     <td>✔</td>
     <td>✔</td>
   </tr>
-  <tr class="content-row">
+  <tr class="content-row toggle-content">
     <td>Implicit methods (via PETSc)</td>
     <td>Alpha</td>
     <td>Alpha</td>
   </tr>
-  <tr class="content-row">
+  <tr class="content-row toggle-content">
     <td>Source/receivers (fully customizable)</td>
     <td>✔</td>
     <td>✔</td>
   </tr>
-  <tr class="content-row">
+  <tr class="content-row toggle-content">
     <td>Boundary conditions (fully customizable)</td>
     <td>✔</td>
     <td>✔</td>
   </tr>
-  <tr class="content-row">
+  <tr class="content-row toggle-content">
     <td>Staggered grids</td>
     <td>✔</td>
     <td>✔</td>
   </tr>
-  <tr class="content-row">
+  <tr class="content-row toggle-content">
     <td>Subsampling (e.g. space/time decimation)</td>
     <td>✔</td>
     <td>✔</td>
   </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Subdomains</td>
       <td>✔</td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>API for third-party library callbacks</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Jupyter notebook tutorials,
       examples and documentation</td>
       <td>✔</td>
@@ -125,27 +148,27 @@ These features make DevitoPRO an essential tool for seismic imaging professional
         <td colspan="3">Devito Cookbook
         (includes forward, adjoint and 2D/3D)</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Isotropic acoustic and viscoacoustic</td>
       <td>✔</td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Isotropic elastic and viscoelastic</td>
       <td>✔</td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Acoustic VTI and TTI</td>
       <td>✔</td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Viscoacoustic VTI and TTI</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Elastic VTI and TTI</td>
       <td></td>
       <td>✔</td>
@@ -154,28 +177,28 @@ These features make DevitoPRO an essential tool for seismic imaging professional
         <td colspan="3"> PDE-constrained optimization
         and adjoint method </td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Express adjoint-method optimization
       problems symbolically</td>
       <td>✔</td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Checkpoint(/Revolve)-based back-propagation</td>
       <td>✔</td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Compression-based back-propagation</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Intelligent data-streaming disk-host-GPU</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Lossy data compression for
       floating-point data</td>
       <td></td>
@@ -185,42 +208,42 @@ These features make DevitoPRO an essential tool for seismic imaging professional
       <td colspan="3"> Algorithmic and compiler
           performance optimizations </td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Decoupler (software integration layer for seismic codes)</td>
       <td></td>
       <td>✔</td>
     </tr> 
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Automated multi-level parallelization</td>
       <td></td>
       <td>✔</td>
     </tr> 
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Expanding-box (only compute active domain)</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Mixed-precision computation</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Data-locality optimization (e.g. cache-blocking)</td>
       <td>✔</td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Autotuning/Devitotuner</td>
       <td>Basic</td>
       <td>Advanced</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>FLOP reduction (e.g. factorization, hoisting, CSE)</td>
       <td>Comprehensive</td>
       <td>Advanced</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Advanced low-level optimization (e.g., memory alignment)</td>
       <td></td>
       <td>✔</td>
@@ -228,17 +251,17 @@ These features make DevitoPRO an essential tool for seismic imaging professional
     <tr class="feature-row">
         <td colspan="3">Supported architectures</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>CPUs: AMD, ARM, and Intel</td>
       <td>✔</td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>GPUs: AMD, Intel, Nvidia</td>
       <td>✔</td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Accelerators: Intel KNC, KNL</td>
       <td>✔</td>
       <td>✔</td>
@@ -246,47 +269,47 @@ These features make DevitoPRO an essential tool for seismic imaging professional
     <tr class="feature-row">
         <td colspan="3"> Programming models </td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>OpenMP for CPUs and GPUs</td>
       <td>✔</td>
       <td>✔</td>
     </tr>  
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>OpenACC for Nvidia GPUs</td>
       <td>✔</td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>CUDA</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>HIP</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>SYCL</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>NUMA-aware MPI-OpenMP</td>
       <td>✔</td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>MPI: Single-node-multi-gpu</td>
       <td>✔</td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>MPI: Multi-node-multi-gpu</td>
       <td></td>
       <td>Beta</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Optimized GPU-aware MPI</td>
       <td></td>
       <td>✔</td>
@@ -294,17 +317,17 @@ These features make DevitoPRO an essential tool for seismic imaging professional
     <tr class="feature-row">
         <td colspan="3">Supported cloud platforms</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>AWS</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Azure</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>GCP</td>
       <td></td>
       <td>✔</td>
@@ -315,12 +338,12 @@ These features make DevitoPRO an essential tool for seismic imaging professional
         TTI. All benchmarks are independently autotuned to get best performance
         on each target.</i></td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Access to benchmark reports and raw logs for reproducibility.</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Cloud instance tuning and benchmarking.</td>
       <td></td>
       <td>✔</td>
@@ -328,32 +351,32 @@ These features make DevitoPRO an essential tool for seismic imaging professional
     <tr class="feature-row">
       <td colspan="3">Support</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Slack: community support on public channels</td>
       <td>✔</td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Slack: Private/NDA support channels</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Projects</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Training</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Consultancy</td>
       <td></td>
       <td>✔</td>
     </tr>
-    <tr class="content-row">
+    <tr class="content-row toggle-content">
       <td>Support/maintenance</td>
       <td></td>
       <td>✔</td>
