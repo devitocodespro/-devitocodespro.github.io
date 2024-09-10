@@ -45,7 +45,8 @@ These features make DevitoPRO an essential tool for seismic imaging professional
 
 .visible {
     display: table-row;
-  }
+}
+
 </style>
 
 <script>
@@ -71,7 +72,7 @@ These features make DevitoPRO an essential tool for seismic imaging professional
     <td class="center"><b>DevitoPRO</b></td>
   </tr>
   <tr class="feature-row">
-    <td colspan="3"> Domain-specific language (DSL) for finite-differences </td>
+    <td colspan="3">Domain-specific language (DSL) for finite-differences (details)</td>
   </tr>
   <tr class="content-row toggle-content">
     <td>Write PDE solvers symbolically</td>
@@ -146,7 +147,7 @@ These features make DevitoPRO an essential tool for seismic imaging professional
     </tr>
         <tr class="feature-row">
         <td colspan="3">Devito Cookbook
-        (includes forward, adjoint and 2D/3D)</td>
+        (includes forward, adjoint and 2D/3D) (details)</td>
     </tr>
     <tr class="content-row toggle-content">
       <td>Isotropic acoustic and viscoacoustic</td>
@@ -174,8 +175,8 @@ These features make DevitoPRO an essential tool for seismic imaging professional
       <td>✔</td>
     </tr>
     <tr class="feature-row">
-        <td colspan="3"> PDE-constrained optimization
-        and adjoint method </td>
+        <td colspan="3">PDE-constrained optimization
+        and adjoint method (details)</td>
     </tr>
     <tr class="content-row toggle-content">
       <td>Express adjoint-method optimization
@@ -205,8 +206,8 @@ These features make DevitoPRO an essential tool for seismic imaging professional
       <td>✔</td>
     </tr>
     <tr class="feature-row">
-      <td colspan="3"> Algorithmic and compiler
-          performance optimizations </td>
+      <td colspan="3">Algorithmic and compiler
+          performance optimizations (details)</td>
     </tr>
     <tr class="content-row toggle-content">
       <td>Decoupler (software integration layer for seismic codes)</td>
@@ -249,7 +250,7 @@ These features make DevitoPRO an essential tool for seismic imaging professional
       <td>✔</td>
     </tr>
     <tr class="feature-row">
-        <td colspan="3">Supported architectures</td>
+        <td colspan="3">Supported architectures (details)</td>
     </tr>
     <tr class="content-row toggle-content">
       <td>CPUs: AMD, ARM, and Intel</td>
@@ -267,7 +268,7 @@ These features make DevitoPRO an essential tool for seismic imaging professional
       <td>✔</td>
     </tr>
     <tr class="feature-row">
-        <td colspan="3"> Programming models </td>
+        <td colspan="3">Programming models (details)</td>
     </tr>
     <tr class="content-row toggle-content">
       <td>OpenMP for CPUs and GPUs</td>
@@ -315,7 +316,7 @@ These features make DevitoPRO an essential tool for seismic imaging professional
       <td>✔</td>
     </tr>
     <tr class="feature-row">
-        <td colspan="3">Supported cloud platforms</td>
+        <td colspan="3">Supported cloud platforms (details)</td>
     </tr>
     <tr class="content-row toggle-content">
       <td>AWS</td>
@@ -333,10 +334,10 @@ These features make DevitoPRO an essential tool for seismic imaging professional
       <td>✔</td>
     </tr>
     <tr class="feature-row">
-        <td colspan="3"><i>
+        <td colspan="3">
         Cross-platform industry benchmarks. Includes iso-acoustic and acoustic
         TTI. All benchmarks are independently autotuned to get best performance
-        on each target.</i></td>
+        on each target. (details)</td>
     </tr>
     <tr class="content-row toggle-content">
       <td>Access to benchmark reports and raw logs for reproducibility.</td>
@@ -349,7 +350,7 @@ These features make DevitoPRO an essential tool for seismic imaging professional
       <td>✔</td>
     </tr>
     <tr class="feature-row">
-      <td colspan="3">Support</td>
+      <td colspan="3">Support (details)</td>
     </tr>
     <tr class="content-row toggle-content">
       <td>Slack: community support on public channels</td>
