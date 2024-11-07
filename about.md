@@ -44,9 +44,9 @@ mathematical modeling.
 
 <img src="/assets/img/profile_Paul.jpg" alt="Paul Holzhauer" align="left"
 style="margin:0px 50px 50px 50px"/> Paul Holzhauer is responsible for developing
-the business strategy for Devito Codes, Ltd. Previously he developed and led the
+the business strategy for Devito Codes. Previously he developed and led the
 Nvidia Oil and Gas Team to help the industry and geoscientists to do more
-science for the 13 years prior to joining Devito Codes, Ltd.  Paul has spoken
+science for the 13 years prior to joining Devito Codes. Paul has spoken
 around the world at conferences on the application of GPU technology to
 extracting value from seismic data in order to reduce uncertainties, to improve
 the accuracy of reservoir predictions, and to mitigate the risk associated with
@@ -102,7 +102,7 @@ Teaching Assistant for programming and continental tectonics.
 Ed's research interests span seismic imaging, finite-difference methods,
 boundary conditions, wavefield modeling, and full-waveform inversion (FWI). His
 multidisciplinary approach to geophysics and computational science has
-positioned him as a valuable asset to the Devito Codes Ltd. team.
+positioned him as a valuable asset to the Devito Codes team.
 
 ## Jack Betteridge, Research Scientist
 
