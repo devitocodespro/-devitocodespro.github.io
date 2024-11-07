@@ -10,13 +10,18 @@ permalink: /about/
 ## About us
 
 Devito Codes Ltd is the commercial arm of the open-source platform
-[Devito](https://www.devitoproject.org/). Products and services include:
+[Devito](https://www.devitoproject.org/). We primarily provide products and
+services to energy companies and geophysical exploration companies; while
+collaborating closely with all major computer hardware manufacturers and cloud
+companies to help their customers maximize **performance**, **productivity** and
+**portability** on their platform.
 
-* DevitoPRO License Agreement (includes maintenance and support)
-* Performance optimization for client computer architectures, clusters and Cloud
-* Bespoke software development projects
-* Consultancy
-* Training
+Devito Codes products and services include:
+
+* DevitoPRO (includes licensing, maintenance and support)
+* Performance optimization for client computer architectures, on-prem and Cloud
+* Bespoke software development projects (SOWs)
+* Consultancy, training
 
 ## Gerard Gorman, CEO and co-founder
 
