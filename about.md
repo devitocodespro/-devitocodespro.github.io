@@ -30,7 +30,7 @@ style="margin:0px 50px 50px 50px"/>Fabio has a PhD in
 Computer Science from Imperial College where he worked on compiler
 technologies for mathematical modeling software - specifically floating
 point reduction algorithms and data locality optimizations for
-finite-elements within the open source software Firedrake. Fabio is the lead
+finite-elements within the open-source software [Firedrake](https://www.firedrakeproject.org/). Fabio is the lead
 software architect of Devito and has more than a decade of experience working on
 the boundaries between computer science, high-performance computing and
 mathematical modeling.
@@ -58,13 +58,14 @@ Mathematics from the University of Houston.
 style="margin:0px 50px 50px 50px"/> Mathias has a Ph.D. from the Georgia
 Institute of Technology. Previously, he worked as a research scientist in the
 Seismic Laboratory for Imaging and Modelling (SLIM). During that time, he was
-the lead developer of the open-source software JUDI (Julia Devito Inversion
+the lead developer of the open-source software
+[JUDI](https://slimgroup.github.io/JUDI.jl/dev/) (Julia Devito Inversion
 framework). He has more than a decade of experience working on scalable and
 portable open-source software for the exploration geophysics and inverse
 problems. Mathias's research includes large-scale PDE-constrained optimization,
 finite-difference solver, non-linear and non-convex optimization with recent
-extensions to medical imaging, and cloud-native high-performance computing
-(AWS, GCP, and Azure).
+extensions to medical imaging, and cloud-native high-performance computing (AWS,
+GCP, and Azure).
 
 Mathias has been a critical figure in developing the open-source Devito
 framework since the beginning. As Senior Solution Architect, he continues to
@@ -97,3 +98,18 @@ Ed's research interests span seismic imaging, finite-difference methods,
 boundary conditions, wavefield modeling, and full-waveform inversion (FWI). His
 multidisciplinary approach to geophysics and computational science has
 positioned him as a valuable asset to the Devito Codes Ltd. team.
+
+## Jack Betteridge, Research Scientist
+
+<img src="/assets/img/profile_Jack.jpg" alt="Jack Betteridge" align="left"
+style="margin:0px 50px 50px 50px"/>Jack is a research scientist with a
+mathematical background and expertise in high performance computing. Previously
+he worked at Imperial College London as a researcher and developed for the
+[Firedrake project](https://www.firedrakeproject.org/) -- a finite element code
+generation software framework. His work there improved the deployment,
+scalability, and parallel efficiency of simulations on HPC. This work also
+involved adapting code to execute on emerging architectures. During this time he
+also made numerous contributions to other open source software projects. Jack's
+PhD is from the University of Bath and focused efficient solvers for numerical
+weather prediction and involved research into preconditioning for use in
+operational weather models.
